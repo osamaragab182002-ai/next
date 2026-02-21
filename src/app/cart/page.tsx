@@ -73,7 +73,7 @@ function handleupdate(productId :string , count:number){
   
   // console.log(cartData?.data.products)
   return <>
-  {cartData?.numOfCartItems > 0 ? <div className='flex gap-5'>
+  {cartData?.numOfCartItems?? 0 ? <div className='flex gap-5'>
     
 <div className="w-3/4">
 <div className="relative overflow-x-auto bg-neutral-primary-soft shadow-xs rounded-base border border-default">

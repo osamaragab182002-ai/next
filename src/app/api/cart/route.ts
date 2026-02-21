@@ -11,7 +11,7 @@ const rep = await fetch(`${process.env.API}/cart`,{
     headers:{
         
         
-        token :token.token,
+         token: token.token as string,
         'Content-type':'application/json'
     }
 })
