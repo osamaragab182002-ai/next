@@ -12,7 +12,7 @@ const rep = await fetch(`${process.env.API}/wishlist`,{
     headers:{
         
         
-         token: token.token as string,
+         token: (token.token||token) as string,
         'Content-type':'application/json'
     }
 })
